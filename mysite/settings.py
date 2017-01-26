@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testycms',
-        'USER': 'testycms',
-        'PASSWORD': 'testycms',
-        'HOST': 'edulinux.pl',
-        'PORT': '3366',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
         'OPTIONS': {
     		    'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         }
