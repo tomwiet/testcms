@@ -1,0 +1,15 @@
+{% extends 'testy/base.html' %}
+
+{% block content %}
+  {% for question in questions %}
+  <h6>{{question.title}}</h6>
+  <p>{{ question.quest_text }}</p>
+  <ol>
+    <ul>{{question.answer1}}</ul>
+    <ul>{{question.answer2}}</ul>
+    <ul>{{question.answer3}}</ul>
+    <ul>{{question.answer4}}</ul>
+  </ol>
+  {% endfor %}
+
+{% endblock content %}
