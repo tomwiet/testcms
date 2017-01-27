@@ -2,15 +2,15 @@ from django.db import models
 
 # Create your models here.
 
-class Task(models.Model):
+class Question(models.Model):
 
     title = models.CharField(max_length=200)
-    questtext  = models.TextField()
-    answer1 = models.TextField()
-    answer2 = models.TextField()
-    answer3 = models.TextField()
-    answer4 = models.TextField()
-    corect = models.IntegerField()
+    quest_text  = models.TextField('Treść pytania')
+    answer1 = models.TextField('Odpowiedź 1')
+    answer2 = models.TextField('Odpowiedź 2')
+    answer3 = models.TextField('Odpowiedź 3')
+    answer4 = models.TextField('Odpowiedź 4')
+    corect = models.IntegerField('Poprawna jest odpowiedź nr:')
 
-    def __unicode__ (self):
-        return self.questtext
+    def __str__(self):
+        return self.quest_text
