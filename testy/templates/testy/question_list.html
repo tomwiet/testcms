@@ -1,9 +1,11 @@
 {% extends 'testy/base.html' %}
 
 {% block content %}
+<div class="w3-container w3-margin">
   {% for question in questions %}
-  <h6>{{question.title}}</h6>
-  <p>{{ question.quest_text }}</p>
+
+  <h6 class="w3-panel w3-center">{{question.title}}</h6>
+  <p class="w3-text-safety-green">{{ question.quest_text }}</p>
   <ul class="w3-ul">
     <li>{{question.answer1}}</li>
     <li>{{question.answer2}}</li>
@@ -11,5 +13,5 @@
     <li>{{question.answer4}}</li>
   </ul>
   {% endfor %}
-
+<div>
 {% endblock content %}
